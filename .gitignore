@@ -1,0 +1,120 @@
+############################
+# Build artifacts
+############################
+**/bin/
+**/obj/
+**/out/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/publish/
+**/dist/
+
+############################
+# User-specific files
+############################
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vscode/settings.json
+.vs/
+.idea/
+
+############################
+# Logs and temporary files
+############################
+*.log
+*.tlog
+*.vspscc
+*.cache
+*.pdb
+*.pidb
+*.tmp
+*.temp
+*.dbmdl
+*.dbproj.schemaview
+*.bak
+*.orig
+*.rej
+
+############################
+# Environment and secrets
+############################
+# App settings should be managed via environment variables or secrets.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.*.json
+# Keep only appsettings.json if needed for production baseline
+!**/appsettings.json
+
+############################
+# OS-specific junk
+############################
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Linux
+*~
+
+############################
+# Packages and dependencies
+############################
+# NuGet
+*.nupkg
+*.snupkg
+# Restore folders
+**/packages/
+# Don’t ignore if you have a specific packages folder checked in
+!**/packages/build/
+
+############################
+# Tooling
+############################
+# JetBrains Rider
+.idea/
+*.iml
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+############################
+# Test results
+############################
+*.coverage
+*.coveragexml
+TestResult.xml
+TestResults/
+*.trx
+
+############################
+# Docker / CI
+############################
+# Docker intermediate files
+*.dockerignore
+docker-compose.override.yml
+.env
+
+############################
+# Other project-specific exclusions
+############################
+# Local HTTPS dev certificates
+**/Properties/launchSettings.json
+
+# Local SQLite / EF Core databases
+*.db
+*.sqlite
+*.sqlite3
