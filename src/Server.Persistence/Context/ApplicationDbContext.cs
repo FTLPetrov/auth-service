@@ -7,7 +7,6 @@ using DomainUser = Server.Domain.Entities.User;
 
 namespace Server.Persistence.Context;
 
-// Ensure that 'User' inherits from IdentityUser<Guid> and 'UserRole' inherits from IdentityRole<Guid>
 public class ApplicationDbContext : IdentityDbContext<User, UserRole, Guid>
 {
     public DbSet<DomainUser> UsersDomain { get; set; } = null!;
