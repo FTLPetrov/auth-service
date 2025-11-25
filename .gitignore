@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore local development appsettings (may contain DB passwords/secrets)
+src/Server.WebApi/appsettings.Development.json
