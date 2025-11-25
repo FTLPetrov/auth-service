@@ -1,3 +1,5 @@
+using Server.Persistence;
+
 namespace Server.WebApi;
 
 public class Program
@@ -10,6 +12,8 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services.AddPersistence(builder.Configuration);
 
         // Authentication/Authorization will be configured later
         builder.Services.AddAuthentication();
