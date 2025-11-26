@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Server.Application\Server.Application.csproj" />
     <ProjectReference Include="..\Server.Domain\Server.Domain.csproj" />
   </ItemGroup>
